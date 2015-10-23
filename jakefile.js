@@ -31,9 +31,12 @@
 		console.log("\nTesting 123...");
 
 		var reporter = require("nodeunit").reporters.default;
-		reporter.run(["src/server/_server_test.js"]);
+		reporter.run(["src/server/_server_test.js"], null, function(failures) {
+			if(failures) fail("Tests failed!");
+			complete();
+		});
 
-	});
+	}, { async: true });
 
 	desc("Integrate Code");
 	task("integrate", ["default"], function(){
