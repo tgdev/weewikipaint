@@ -31,8 +31,7 @@
 		console.log("\nTesting 123...");
 
 		var reporter = require("nodeunit").reporters["default"];
-
-		reporter.run(["test"]);
+		reporter.run(["src/server/_server_test.js"]);
 
 	});
 

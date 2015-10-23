@@ -21,7 +21,6 @@ Engineering Tasks:
 - client-side testing
 
 ToDo Current Task:
-- Choose framework
 - Abstract framework (to be agnostic)
 - Swap out different framework to test abstraction
 - Add LICENSE.TXT
