@@ -15,9 +15,13 @@ User Stories:
 - marketing copy
 
 Engineering Tasks:
-* continuous integration
-- server-side testing
+* server-side testing
 - client-side testing
 
 ToDo Current Task:
-* make build fail when Lint fails
+-
+
+Future ideas:
+- Swap jake for grunt (w/ jshint)
+- Abstract framework (Swap out different framework to test abstraction)
+- Add LICENSE.TXT

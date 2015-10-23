@@ -4,7 +4,7 @@
 	"use strict";
 
 	desc("Build and Test");
-	task("default", ["lint"]);
+	task("default", ["lint", "test"]);
 
 	desc("Lint all the things");
 	task("lint", [], function() {
@@ -25,6 +25,18 @@
 		if(!passed) fail("Lint failed!");
 
 	});
+
+	desc("Test all the code");
+	task("test", [], function() {
+		console.log("\nTesting 123...");
+
+		var reporter = require("nodeunit").reporters.default;
+		reporter.run(["src/server/_server_test.js"], null, function(failures) {
+			if(failures) fail("Tests failed!");
+			complete();
+		});
+
+	}, { async: true });
 
 	desc("Integrate Code");
 	task("integrate", ["default"], function(){
