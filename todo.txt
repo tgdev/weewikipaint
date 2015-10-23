@@ -18,3 +18,6 @@ Engineering Tasks:
 * continuous integration
 - server-side testing
 - client-side testing
+
+ToDo Current Task:
+* make build fail when Lint fails
