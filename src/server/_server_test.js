@@ -1,10 +1,8 @@
 "use strict";
 
-var server = require("./server"),
-	assert = require("assert");
+var server = require("./server");
 
 exports.testSomething = function(test) {
-	// test.equals(3, server.number(), "number");
-	assert.equal(3, server.number(), "number");
+	test.equals(3, server.number(), "number");
 	test.done();
 };
