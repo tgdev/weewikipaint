@@ -30,7 +30,7 @@
 	task("test", [], function() {
 		console.log("\nTesting 123...");
 
-		var reporter = require("nodeunit").reporters["default"];
+		var reporter = require("nodeunit").reporters.minimal;
 		reporter.run(["src/server/_server_test.js"]);
 
 	});
