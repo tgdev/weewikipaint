@@ -4,7 +4,7 @@
 	"use strict";
 
 	desc("Build and Test");
-	task("default", ["lint"]);
+	task("default", ["lint", "test"]);
 
 	desc("Lint all the things");
 	task("lint", [], function() {
@@ -24,6 +24,11 @@
 
 		if(!passed) fail("Lint failed!");
 
+	});
+
+	desc("Test all the code");
+	task("test", [], function() {
+		console.log("\nTesting 123...");
 	});
 
 	desc("Integrate Code");

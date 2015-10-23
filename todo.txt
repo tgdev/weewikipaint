@@ -9,15 +9,19 @@ Minimum Marketing Feature:
 - more collaborative features???
 
 User Stories:
+-
+-- swap jake for grunt (w/ jshint)
 * "hello world" for server
 - "hello world" for client
 - support multiple browsers
 - marketing copy
 
 Engineering Tasks:
-* continuous integration
-- server-side testing
+* server-side testing
 - client-side testing
 
 ToDo Current Task:
-* make build fail when Lint fails
+- Choose framework
+- Abstract framework (to be agnostic)
+- Swap out different framework to test abstraction
+- Add LICENSE.TXT

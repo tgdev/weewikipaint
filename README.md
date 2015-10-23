@@ -6,6 +6,7 @@ Dummy web app from [Let's code TDJS](http://www.letscodejavascript.com).
 
 - Node.JS
 - Git
+- Nodeunit (test framework)
 
 To build:
 1. Open command prompt
