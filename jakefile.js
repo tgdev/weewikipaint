@@ -29,6 +29,11 @@
 	desc("Test all the code");
 	task("test", [], function() {
 		console.log("\nTesting 123...");
+
+		var reporter = require("nodeunit").reporters["default"];
+
+		reporter.run(["test"]);
+
 	});
 
 	desc("Integrate Code");
