@@ -25,3 +25,6 @@ Future ideas:
 - Swap jake for grunt (w/ jshint)
 - Abstract framework (Swap out different framework to test abstraction)
 - Add LICENSE.TXT
+
+Notes:
+- Nodeunit doesn't work properly on windows... unicode chars
